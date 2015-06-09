@@ -9,7 +9,7 @@
     <meta name="author" content="">
 <!--    <link rel="icon" href="icons/NetASM.ico">-->
 
-    <title>Project Name</title>
+    <title>NetASM</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -38,12 +38,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://noise-lab.net/">Noise</a>
+            <a class="navbar-brand" href="./index.html">Home</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Project Name</a></li> 
-              <li><a href="people.html">People</a></li> 
+<!--              <li class="active"><a href="#">Home</a></li>-->
+              <li><a href="members.html">Members</a></li> 
+              <li><a href="publications.html">Publications</a></li>
               <li><a href="resources.html">Resources</a></li>
             </ul>
 <!--
@@ -57,58 +58,66 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1><b>Project Name</b></h1>
-        <h2>Project Subtitle</h2>
-        <p><a class="btn btn-lg btn-primary" href="https://github.com/noise-lab" role="button">View on Github &raquo;</a></p>
+        <h1><b>NetASM</b></h1>
+        <h2>A Network Assembly Language for Programmable Data Planes</h2>
+        <p><a class="btn btn-lg btn-primary" href="https://github.com/NetASM" role="button">View on Github &raquo;</a></p>
       </div>
     </div> <!-- /container -->
       
     <div class="container">
       <div class="row">
         <div class="col-md-7">
-          <h2>What is Project Name?</h2>
-          <p>Project description here.
+          <h2>What is NetASM?</h2>
+          <p>NetASM is a network assembler that takes high-level SDN languages (NetKAT, P4, etc.) and maps the primitives to device-specific directives in FPGAs 
+            and various chipsets. It's a nascent work on building a network assembly language for programmable network devices (e.g., FPGAs, RMT, Intel’s 
+            FlexPipe, NPUs). NetASM provides assembly instructions that directly reflect the capabilities of the underlying device, thus providing either a 
+            human programmer or compiler precise, fine-grained control over the device’s resources. It exposes the details in the language such as creating 
+            tables and defining layouts of the processing pipeline.
+
+            It's a glimpse into the future of hardware support for software-defined networking (SDN), where the data plane is no longer a fixed-function
+            device, but rather a fully programmable device whose behavior is dictated by the programmer, with the ability to reconfigure it on-demand.
           </p>
         </div>
           
         <div class="col-md-5">
-          <h3>More Details/Demo/Video</h3>
+          <h3>Building a Programmable Data Plane</h3>
           <!-- 4:3 aspect ratio -->
           <div class="span4">
-              <iframe width="420" height="315" src="https://www.youtube.com/embed/EWW1pw1lhP0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="450" height="320" src="https://www.youtube.com/embed/EWW1pw1lhP0" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-          
+      
+      <br>
       <div class="row">
         <div class="col-md-4">
-          <h2>Installation</h2>
-          <p>Most recommended way to get hands-on with this project is
-        through our pre-built VirtualBox VMs. Click below to download
-        our VMs.</p>  
-          <p><a class="btn btn-default" href="" role="button">
-            VM Download &raquo;</a>
+          <h2>Pre-installed VM</h2>
+          <p>Most recommended way to get hands-on with NetASM is through our pre-built VirtualBox VMs. Click below to download our VMs.</p> 
+          <p><a class="btn btn-default" href="http://www.cs.princeton.edu/~mshahbaz/sites/netasm/vms/NetASM-python-amd64.ova" role="button">
+            NetASM-python 64-bit VM &raquo;</a>
+          </p>
+          <p><a class="btn btn-default" href="http://www.cs.princeton.edu/~mshahbaz/sites/netasm/vms/NetASM-haskell-amd64.ova" role="button">
+            NetASM-haskell 64-bit VM &raquo;</a>
           </p>
           </p>
         </div>
         <div class="col-md-5">
-          <h2>Documentation</h2>
-          <p>For more documentation, click below:</p>
-          <p><a class="btn btn-default" href="netasm-python.html" role="button">Documentation &raquo;</a>
+          <h2>Tutorial and Documentation</h2>
+          <p>For more documentation and tutorial on how to build and run NetASM programs, click below:</p>
+          <p><a class="btn btn-default" href="netasm-python.html" role="button">Python Runtime &raquo;</a>
              &nbsp;
+             <a class="btn btn-default" href="netasm-haskell.html" role="button">Haskell Runtime &raquo;</a>
           </p>
        </div>
           
         <div class="col-md-3">
           <h2>Contact</h2>
             <p>
-              <b>Project Members</b>: <a
-          href="http://www.cs.princeton.edu/"> Project Lead</a>
+              <b>Project Lead</b>: <a href="http://www.cs.princeton.edu/~mshahbaz/"> Muhammad Shahbaz</a>
               <br>
-              <b>Contact Email</b>: lastname @ cs.princeton.edu
+              <b>Email</b>: lastname @ cs.princeton.edu
             </p>
-<!--          <p><a class="btn btn-default" href="./members.html"
-          role="button">View other members &raquo;</a></p> -->
+          <p><a class="btn btn-default" href="./members.html" role="button">View other members &raquo;</a></p>
         </div>
       </div>
         
