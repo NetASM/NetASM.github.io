@@ -1,1 +1,2 @@
-# Welcome to NetASM-www!
+# netasm.github.io
+Welcome to NetASM project website!
